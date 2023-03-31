@@ -1,7 +1,7 @@
 [
   {
     "id": "6425d72a0834792ec6731424",
-    "time": 16,
+    "time": 6,
     "blogImage": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
     "authorImage": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
     "tags": [
@@ -35,7 +35,7 @@
       "programmer"
     ],
     "name": "Amie Ruiz",
-    "publish": "2023/03/10",
+    "publish": "2023/03/15",
     "title": "The Power of Power BI: How to Create Effective Visualizations"
   },
   {
@@ -48,7 +48,7 @@
       "developer"
     ],
     "name": "Nolan Horn",
-    "publish": "2023/03/21",
+    "publish": "2023/03/18",
     "title": "Connecting Data Sources in Power Platform: Best Practices"
   },
   {
@@ -100,7 +100,7 @@
       "programmer"
     ],
     "name": "Walters Bates",
-    "publish": "2023/03/14",
+    "publish": "2023/03/23",
     "title": "Power Platform Security and Governance: What You Need to Know"
   }
 ]

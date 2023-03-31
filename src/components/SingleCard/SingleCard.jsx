@@ -1,34 +1,61 @@
 import React from "react";
 import "./SingleCard.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBookmark } from "@fortawesome/free-solid-svg-icons";
+import PublishDate from "../PublishDate/PublishDate";
 
 const SingleCard = ({ singleData }) => {
   console.log(singleData);
-  const { id, time, blogImage, authorImage, tags, name, publish, title } =
-    singleData;
+  const {id, time, blogImage, authorImage, tags, name, publish, title}= singleData;
+  
+  
+
   return (
     <div className="card w-full bg-base-100 shadow-xl">
       <figure>
         <img className="w-full" src={blogImage} alt="Shoes" />
       </figure>
       <div className="card-body">
-        <div className="flex justify-between">
+        <div className="flex justify-between items-center">
           <div className="flex gap-6">
             <div className="">
-              <img className="w-14 h-14 rounded-full border-2 border-secondary" src={authorImage} alt="" />
+              <img
+                className="w-14 h-14 rounded-full border-2 border-secondary"
+                src={authorImage}
+                alt=""
+              />
             </div>
             <div>
               <h3 className="font-bold text-2xl text-neutral">{name}</h3>
-              <p className="font-semibold text-neutral opacity-60">Date: {publish}</p>
+              
+              <PublishDate publish={publish} ></PublishDate>
             </div>
           </div>
-          <div>
-            <p className="font-medium text-xl text-neutral opacity-60">minute: {time}</p>
+          <div className="flex gap-3 items-center">
+            <p className="font-medium text-xl text-neutral opacity-60">
+              {time<10?'0'+time:time} min read
+            </p>
+
+            <p className="opacity-60 text-xl text-neutral">
+              <FontAwesomeIcon icon={faBookmark} />
+            </p>
           </div>
         </div>
-        <h2 className="card-title">Shoes!</h2>
-        <p>If a dog chews shoes whose shoes does he choose?</p>
-        <div className="card-actions justify-end">
-          <button className="btn btn-primary">Buy Now</button>
+        <h1 className="font-bold text-4xl text-neutral my-4">{title}</h1>
+        <div className="flex gap-4">
+          {tags.map((tag, index) => (
+            <span
+              key={index}
+              className="text-xl font-medium text-neutral opacity-60"
+            >
+              #{tag}
+            </span>
+          ))}
+        </div>
+        <div className="card-actions">
+          <button className="text-secondary font-semibold text-xl underline decoration-1 underline-offset-2 hover:text-success">
+            Mark as read
+          </button>
         </div>
       </div>
     </div>
