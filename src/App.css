@@ -11,3 +11,14 @@
         gap: 10px;
     }
   }
+
+  @font-face {
+    /* font-family: myFirstFont; */
+    font-family: 'Exo 2', sans-serif;
+    src: url(../public/Exo2-VariableFont_wght.ttf);
+  }
+
+.custom-font{
+    font-family: 'Exo 2', sans-serif;
+}
+

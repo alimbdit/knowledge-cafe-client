@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "question": "'Props' vs 'state'",
+      "question": "'Props' vs 'state'.",
       "answer": "Props and state are both used to manage data in a React component, but they serve different purposes. Props are used to pass data from a parent component to a child component , while state is used to manage data within a component. Props are read-only and cannot be modified by the child component, while state is mutable and can be modified by the component using the 'setState()' method. \nIn summary, props are used for customization and reuse of components, while state is used for managing internal component data that changes based on user interactions or other events."
 
     },
