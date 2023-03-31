@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 import PublishDate from "../PublishDate/PublishDate";
 
-const SingleCard = ({ singleData }) => {
+const SingleCard = ({ singleData, handleTime }) => {
   console.log(singleData);
   const {id, time, blogImage, authorImage, tags, name, publish, title}= singleData;
   
@@ -53,7 +53,7 @@ const SingleCard = ({ singleData }) => {
           ))}
         </div>
         <div className="card-actions">
-          <button className="text-secondary font-semibold text-xl underline decoration-1 underline-offset-2 hover:text-success">
+          <button onClick={()=>handleTime(time)} className="text-secondary font-semibold text-xl underline decoration-1 underline-offset-2 hover:text-success">
             Mark as read
           </button>
         </div>

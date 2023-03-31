@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import SingleCard from '../SingleCard/SingleCard';
 import './Cards.css';
 
-const Cards = () => {
+const Cards = ({handleTime}) => {
     const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -13,7 +13,7 @@ const Cards = () => {
     return (
         <div>
             {
-                data && data.map(singleData => <SingleCard singleData={singleData} key={singleData.id}></SingleCard>)
+                data && data.map(singleData => <SingleCard handleTime={handleTime} singleData={singleData} key={singleData.id}></SingleCard>)
             }
         </div>
     );
