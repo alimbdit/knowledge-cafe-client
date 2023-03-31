@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 import PublishDate from "../PublishDate/PublishDate";
 
-const SingleCard = ({ singleData, handleTime }) => {
+const SingleCard = ({ singleData, handleTime, handleBookmark }) => {
   console.log(singleData);
   const {id, time, blogImage, authorImage, tags, name, publish, title}= singleData;
   
@@ -36,9 +36,9 @@ const SingleCard = ({ singleData, handleTime }) => {
               {time<10?'0'+time:time} min read
             </p>
 
-            <p className="opacity-60 text-xl text-neutral">
+            <span onClick={()=>handleBookmark(title)} className="opacity-60 text-xl text-neutral cursor-pointer">
               <FontAwesomeIcon icon={faBookmark} />
-            </p>
+            </span>
           </div>
         </div>
         <h1 className="font-bold text-4xl text-neutral my-4">{title}</h1>

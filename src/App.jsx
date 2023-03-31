@@ -6,6 +6,11 @@ import Bookmark from './components/Bookmark/Bookmark';
 
 function App() {
   const [time, setTime] = useState(0);
+  const [bookmark, setBookmark] = useState([]);
+
+  const handleBookmark = (title) => {
+    setBookmark([...bookmark, title])
+  }
 
   const handleTime = (readTime) => {
     setTime(time+readTime);
@@ -17,8 +22,8 @@ function App() {
       <div className="max-w-[1280px] mx-auto ">
         <Header></Header>
         <div className="cards-bookmark-container mx-10 mt-8">
-          <Cards handleTime={handleTime}></Cards>
-          <Bookmark time={time}></Bookmark>
+          <Cards handleTime={handleTime} handleBookmark={handleBookmark}></Cards>
+          <Bookmark time={time} bookmark={bookmark}></Bookmark>
         </div>
       </div>
     </div>
