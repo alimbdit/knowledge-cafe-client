@@ -5,7 +5,7 @@ import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 import PublishDate from "../PublishDate/PublishDate";
 
 const SingleCard = ({ singleData, handleTime, handleBookmark }) => {
-  console.log(singleData);
+  // console.log(singleData);
   const {id, time, blogImage, authorImage, tags, name, publish, title}= singleData;
   
   
