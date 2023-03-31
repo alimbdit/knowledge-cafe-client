@@ -3,3 +3,11 @@
     grid-template-columns: 7fr 4fr ;
     grid-gap: 24px;
 }
+
+@media screen and (max-width: 640px) {
+    .cards-bookmark-container{
+        display: flex;
+        flex-direction: column ;
+        gap: 10px;
+    }
+  }

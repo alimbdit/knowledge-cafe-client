@@ -11,7 +11,7 @@ const Cards = ({handleTime, handleBookmark}) => {
       .then((data) => setData(data));
   }, []);
     return (
-        <div>
+        <div className="">
             {
                 data && data.map(singleData => <SingleCard handleTime={handleTime} handleBookmark={handleBookmark} singleData={singleData} key={singleData.id}></SingleCard>)
             }

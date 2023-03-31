@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "question": "'Props' vs 'state'",
+      "answer": "Props and state are both used to manage data in a React component, but they serve different purposes. Props are used to pass data from a parent component to a child component , while state is used to manage data within a component. Props are read-only and cannot be modified by the child component, while state is mutable and can be modified by the component using the 'setState()' method. \nIn summary, props are used for customization and reuse of components, while state is used for managing internal component data that changes based on user interactions or other events."
+
+    },
+    {
+      "id": 2,
+      "question": "How does 'useState()' work?",
+      "answer": "The React hook 'useState()' enables us to add state management features to functional components. It accomplishes this by offering a method for declaring a state variable and a function for updating it.\n 'useState()' returns an array with two values: the current state value and a function to change the state value. These values can be put on variables using destructuring. \n React re-renders the component and changes the value of the state variable when the state value is modified using the update function. \n To manage more complicated state, such objects or arrays, we may also utilize the 'useState()'. As the state variable's initial value, we may achieve this by passing an object or array. After that, the state variable may be updated by using the spread operator. \n In conclusion, 'useState()' is a powerful tool that makes it simple to create scalable and maintainable React apps by allowing us to manage state in functional components."
+
+    },
+    {
+      "id": 3,
+      "question": "Purpose of 'useEffect()' other than fetching data.",
+      "answer": "The 'useEffect()' hook in React is not just limited to fetching data, but can be used for a variety of purposes. It allows you to perform side effects such as updating the DOM, subscribing to events, setting timers, and cleaning up after components.\n Some examples of use cases for 'useEffect()' beyond fetching data include updating the title of the page, handling form submissions, and triggering animations. Essentially, 'useEffect()' allows you to handle any kind of side effect that you would typically need to perform in a class component's lifecycle methods."
+
+    },
+    {
+      "id": 4,
+      "question": "How Does React work?",
+      "answer": "React is a JavaScript library for building user interfaces. As the state of the component is changed, it builds a virtual representation of the DOM and updates it. Data travels from parent components to child components via props in the unidirectional data flow paradigm used by React. Developers may setup and update a component's state as well as clean up any resources the component has consumed using the lifecycle methods provided by React. React assists developers in producing scalable, maintainable, and high-performance applications by offering a virtual DOM, unidirectional data flow, and lifecycle functions."
+
+    }
+    
+  ]

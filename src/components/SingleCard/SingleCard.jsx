@@ -1,7 +1,7 @@
 import React from "react";
 import "./SingleCard.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBookmark } from "@fortawesome/free-solid-svg-icons";
+import { faBookmark } from "@fortawesome/free-regular-svg-icons";
 import PublishDate from "../PublishDate/PublishDate";
 
 const SingleCard = ({ singleData, handleTime, handleBookmark }) => {
@@ -11,13 +11,13 @@ const SingleCard = ({ singleData, handleTime, handleBookmark }) => {
   
 
   return (
-    <div className="card w-full bg-base-100 shadow-xl">
+    <div className="w-full bg-base-100 shadow-xl border-b-2  mb-5 lg:mb-10">
       <figure>
-        <img className="w-full" src={blogImage} alt="cover" />
+        <img className="w-full rounded-lg" src={blogImage} alt="cover" />
       </figure>
       <div className="card-body">
-        <div className="flex justify-between items-center">
-          <div className="flex gap-6">
+        <div className="flex justify-between gap-5 lg:items-center flex-col lg:flex-row">
+          <div className="flex  gap-6">
             <div className="">
               <img
                 className="w-14 h-14 rounded-full border-2 border-secondary"
@@ -36,9 +36,9 @@ const SingleCard = ({ singleData, handleTime, handleBookmark }) => {
               {time<10?'0'+time:time} min read
             </p>
 
-            <span onClick={()=>handleBookmark(title)} className="opacity-60 text-xl text-neutral cursor-pointer">
+            <button onClick={()=>handleBookmark(title)} className="opacity-60 text-xl text-neutral ">
               <FontAwesomeIcon icon={faBookmark} />
-            </span>
+            </button>
           </div>
         </div>
         <h1 className="font-bold text-4xl text-neutral my-4">{title}</h1>
