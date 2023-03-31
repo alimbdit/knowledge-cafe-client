@@ -13,7 +13,7 @@ const SingleCard = ({ singleData }) => {
   return (
     <div className="card w-full bg-base-100 shadow-xl">
       <figure>
-        <img className="w-full" src={blogImage} alt="Shoes" />
+        <img className="w-full" src={blogImage} alt="cover" />
       </figure>
       <div className="card-body">
         <div className="flex justify-between items-center">
@@ -22,7 +22,7 @@ const SingleCard = ({ singleData }) => {
               <img
                 className="w-14 h-14 rounded-full border-2 border-secondary"
                 src={authorImage}
-                alt=""
+                alt="author"
               />
             </div>
             <div>
