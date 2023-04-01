@@ -34,7 +34,7 @@ function App() {
           ></Cards>
           <Bookmark time={time} bookmark={bookmark}></Bookmark>
         </div>
-        
+
         <Blog></Blog>
       </div>
       <ToastContainer />
