@@ -5,7 +5,7 @@ import Header from "./components/Header/Header";
 import Bookmark from "./components/Bookmark/Bookmark";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Blogs from "./components/Blogs/Blogs";
+import Blog from "./components/Blog/Blog";
 
 function App() {
   const [time, setTime] = useState(0);
@@ -14,7 +14,7 @@ function App() {
   const handleBookmark = (title) => {
     const exist = bookmark.find((singleBookmark) => singleBookmark === title);
     if (exist) {
-      toast("You've bookmarked this already!!!");
+      toast.info("You've bookmarked this already!!!");
     }
     setBookmark([...bookmark, title]);
   };
@@ -34,7 +34,8 @@ function App() {
           ></Cards>
           <Bookmark time={time} bookmark={bookmark}></Bookmark>
         </div>
-        <Blogs></Blogs>
+        
+        <Blog></Blog>
       </div>
       <ToastContainer />
     </div>

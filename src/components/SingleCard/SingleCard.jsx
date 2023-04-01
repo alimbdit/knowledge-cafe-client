@@ -11,7 +11,7 @@ const SingleCard = ({ singleData, handleTime, handleBookmark }) => {
   
 
   return (
-    <div className="w-full bg-base-100 shadow-xl border-b-2  mb-5 lg:mb-10">
+    <div className="w-full bg-base-100 shadow-xl border-b-2 border-accent  mb-5 lg:mb-10">
       <figure>
         <img className="w-full rounded-lg" src={blogImage} alt="cover" />
       </figure>

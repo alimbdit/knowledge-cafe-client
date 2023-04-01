@@ -2,7 +2,7 @@ import React from 'react';
 import './Bookmark.css';
 const Bookmark = ({time, bookmark}) => {
     return (
-        <div >
+        <div className='bookmark-container'>
             <div className='px-10 py-5 border border-secondary bg-secondary bg-opacity-10 rounded-lg text-center'>
                 <h3 className='font-bold text-2xl text-secondary'>Spent time on read : {time<10 ? '0'+time : time} min</h3>
             </div>

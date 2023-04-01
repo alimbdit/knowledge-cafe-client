@@ -1,11 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  extend: {
-    fontFamily: {
-      common: ["Exo 2", "sans-serif"],
-    },
-  },
+
   daisyui: {
     
     themes: [

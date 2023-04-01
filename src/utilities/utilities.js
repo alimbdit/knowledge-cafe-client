@@ -5,7 +5,7 @@ const dateCalculator = (date) => {
   const differenceInTime = currentDate.getTime() - publishDate.getTime();
   const inDays = Math.round(differenceInTime);
   const days = inDays / oneDay;
-  return days.toFixed(0);
+  return days.toFixed(0)-1;
 };
 
 export { dateCalculator };
